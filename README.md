@@ -9,5 +9,7 @@ as a programmer and will always grow and be filled with successful projects.
 
 - React.js
 - Next.js
+- styled components
 
-
+## Visit
+https://noamcarmi.com/
