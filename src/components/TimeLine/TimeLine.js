@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { profileImageSource } from '../../constants/constants';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Img } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 
@@ -19,7 +19,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -46,8 +46,14 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        My name is Noam Carmi, 29 years old, i leave in Tel Aviv. <br/>
+        After my academic degree ,I discovered a lot 
+        of interest in software development and I learned to
+        program in a year-long course and a lot of self-study, looking for the company that will give me the
+        opportunity to prove my skills. I have excellent human relations, ability and desire for challenging and
+        instructive work.
       </SectionText>
+       
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -113,6 +119,7 @@ const Timeline = () => {
         })}
       </CarouselButtons>
       <SectionDivider />
+      <Img src={profileImageSource} />
     </Section>
   );
 };

@@ -8,10 +8,25 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I've worked with a range a technologies in the web development world,
+      From Server-side, Client-side To Design.
     </SectionText>
     <List>
+      <ListItem>
+        <picture>
+          <DiFirebase size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Back-End & DB</ListTitle>
+          <ListParagraph>
+            Experience with: <br />
+            Node.js <br/>
+            Mongo-db <br />
+            MySQL<br/>
+            and more...
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <picture>
           <DiReact size="3rem" />
@@ -19,20 +34,11 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
+            Experiece with: <br />
+            HTML & CSS & JS/TS <br/>
+            React.js <br/>
+            Angular.js<br/>
+            and more...
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -43,8 +49,11 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            Experience with: <br />
+            Material UI <br/>
+            Bootstrap <br/>
+            Framer Motion <br />
+            and more...
           </ListParagraph>
         </ListContainer>
       </ListItem>

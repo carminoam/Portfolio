@@ -8,11 +8,11 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () =>  (
   <Container>
     <Div1>
-      <Link href="/">
+      {/* <Link href="/">
         <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
           <DiCssdeck size="3rem" /> <span>Portfolio</span>
         </a>
-      </Link>
+      </Link> */}
     </Div1>
     <Div2>
       <li>
@@ -32,17 +32,17 @@ const Header = () =>  (
       </li>        
     </Div2>
       <Div3>
-        <SocialIcons href="https://google.com">
+        <SocialIcons target="_blank" href="https://github.com/carminoam">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons target="_blank" href="https://www.linkedin.com/in/noam-carmi-263207199/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons target="_blank" href="https://www.instagram.com/noamcarmi1/">
           <AiFillInstagram size="3rem"/>
         </SocialIcons>
       </Div3>
     </Container>
 );
-
+// search-ms:displayname=‏‏תוצאות%20חיפוש%20ב-%20my-portfolio&crumb=location:C%3A%5C---------------------Home-Practice%5Cmy-portfolio\images
 export default Header;
